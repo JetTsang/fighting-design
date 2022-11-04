@@ -1,3 +1,15 @@
+# Waterfall 瀑布流
+
+- [源代码](https://github.com/FightingDesign/fighting-design/tree/master/packages/fighting-design/waterfall)
+- [文档编辑](https://github.com/FightingDesign/fighting-design/blob/master/docs/docs/components/waterfall.md)
+
+## 基本使用
+
+<demo1-vue />
+
+::: details 显示代码
+
+```html
 <template>
   <f-waterfall
     wrap-height="300px"
@@ -98,3 +110,48 @@
     transition: all 1s;
   }
 </style>
+```
+
+:::
+
+## Attributes
+
+| 参数          | 说明                    | 类型          | 可选值 | 默认值 |
+| ------------- | ----------------------- | ------------- | ------ | ------ |
+| `list`        | 数据                    | array         | ——     | array  |
+| `type`        | 布局方式                | (flex,column) | ——     | flex   |
+| `colGap`      | 列间隙                  | number        | ——     | 0      |
+| `rowGap`      | 行间隙                  | number        | ——     | 0      |
+| `minWidth`    | 单行最小宽度            | number        | ——     | 0      |
+| `cols`        | 列数,不指定最小宽度生效 | number        | ——     | 2      |
+| `scrollAwait` | 滚动节流时间            | number        | ——     | 100    |
+
+## Slots
+
+| 名称      | 说明             |
+| --------- | ---------------- |
+| `default` | 瀑布流单项的内容 |
+
+## Events
+
+| 事件名称     | 说明       | 参数 |
+| ------------ | ---------- | ---- |
+| `scroll-end` | 滚动到底部 |      |
+
+## Interface
+
+组件导出以下类型定义：
+
+```ts
+import type { WaterfallRowType } from 'fighting-design'
+```
+
+## Contributors
+
+<a href="https://gitee.com/gz_lib" target="_blank">
+  <f-avatar round src="https://avatars.githubusercontent.com/u/80079124?v=4" />
+</a>
+
+<script setup lang="ts">
+  import demo1Vue from './_demos/waterfall/demo1.vue'
+</script>
