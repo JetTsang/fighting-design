@@ -1,0 +1,1 @@
+import{m as t}from"../app.7e6a5b2c.js";const n=o=>{const e=document.createElement("input");e.value=o,document.body.appendChild(e),e.select(),document.execCommand("Copy"),document.body.removeChild(e),t({message:"\u590D\u5236\u6210\u529F",type:"primary"})};export{n as o};
