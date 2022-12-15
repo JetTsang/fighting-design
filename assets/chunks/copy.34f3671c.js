@@ -1,1 +1,0 @@
-import{k as t}from"../app.22308a76.js";const n=o=>{const e=document.createElement("input");e.value=o,document.body.appendChild(e),e.select(),document.execCommand("Copy"),document.body.removeChild(e),t({message:"复制成功",type:"primary"})};export{n as o};
