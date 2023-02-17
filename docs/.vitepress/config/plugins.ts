@@ -1,6 +1,6 @@
 import MarkdownItContainer from 'markdown-it-container'
-import MarkdownIt from 'markdown-it'
 import { tablePlugin } from './table'
+import type MarkdownIt from 'markdown-it'
 import type { Token } from 'markdown-it'
 
 /**

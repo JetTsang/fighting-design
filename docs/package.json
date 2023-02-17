@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "markdown-it": "^13.0.1",
-    "markdown-it-container": "^3.0.0"
+    "markdown-it-container": "^3.0.0",
+    "vitepress-theme-demoblock": "^2.0.2"
   }
 }

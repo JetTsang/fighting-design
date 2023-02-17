@@ -39,21 +39,11 @@ Fighting Design 使用 [icones](https://icones.js.org) 作为图标库，如下�
 
 ::: demo
 
-<template #source>
-<demo1-vue />
-</template>
-
-```html
+```vue
 <template>
-  <f-svg-icon>
-    <f-icon-apps />
-  </f-svg-icon>
+  <f-svg-icon :icon="FIconApps" />
 
-  <f-svg-icon color="red">
-    <f-icon-bluetooth />
-  </f-svg-icon>
-
-  <f-svg-icon size="34px" :icon="FIconBook" />
+  <f-svg-icon size="34px" :icon="FIconBook" color="red" />
 </template>
 
 <script lang="ts" setup>
@@ -65,9 +55,7 @@ Fighting Design 使用 [icones](https://icones.js.org) 作为图标库，如下�
 
 ## 集合
 
-`svg-icon` 集合，**点击即可直接复制**，共收入 {{num}} 个图标
-
-<demo2-vue />
+`svg-icon` 集合，**点击即可直接复制**，共收入 个图标
 
 ## Attributes
 
@@ -97,11 +85,3 @@ import type { SvgIconInstance, SvgIconProps } from 'fighting-design'
 <a href="https://github.com/Tyh2001" target="_blank">
   <f-avatar round src="https://avatars.githubusercontent.com/u/73180970?v=4" />
 </a>
-
-<script setup lang="ts">
-  import demo1Vue from './_demos/svg-icon/demo1.vue'
-  import demo2Vue from './_demos/svg-icon/demo2.vue'
-  import Svg from '@fighting-design/fighting-icon'
-
-  const num = Object.keys(Svg).length
-</script>
